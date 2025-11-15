@@ -1,14 +1,15 @@
 ---
 title: SourceCode
-emoji: 🚀
+emoji: 👀
 colorFrom: red
 colorTo: red
-sdk: docker
+sdk: streamlit
 app_port: 8501
 tags:
 - streamlit
 pinned: false
-short_description: Streamlit template space
+short_description: Paranox 2.0 Hackathon
+license: mit
 ---
 
 # Welcome to Streamlit!
