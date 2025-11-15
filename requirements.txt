@@ -1,3 +1,6 @@
-altair
+pillow
+ultralytics
 pandas
+matplotlib
+opencv-python-headless
 streamlit
