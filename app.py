@@ -25,7 +25,7 @@ st.markdown("""
     :root {
         --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         --cyber-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #667eea 100%);
-        --emergency-gradient: linear-gradient(135deg, #ff0844 0%, #ff6b00 100%);
+        --emergency-gradient: linear-gradient(135deg, #00c400 0%, #11ff11 100%);
         --bg-card: rgba(17, 24, 39, 0.6);
         --text-primary: #f8fafc;
         --text-secondary: #94a3b8;
@@ -99,7 +99,7 @@ st.markdown("""
     }
     
     .emergency-alert {
-        background: var(--emergency-gradient);
+        background: linear-gradient(45deg, #00c400, #11ff11);
         color: white;
         padding: 0.5rem 1.5rem;
         border-radius: 24px;
@@ -108,7 +108,7 @@ st.markdown("""
         text-transform: uppercase;
         letter-spacing: 1.5px;
         animation: emergencyPulse 1s ease-in-out infinite;
-        box-shadow: 0 0 30px rgba(255, 8, 68, 0.6);
+        box-shadow: 0 0 30px rgba(0, 196, 0, 0.6);
     }
     
     @keyframes emergencyPulse {
@@ -157,11 +157,12 @@ st.markdown("""
     }
     
     .hero-subtitle {
-        font-size: 1.25rem;
-        color: var(--text-secondary);
-        max-width: 800px;
-        margin: 0 auto 2rem;
-        line-height: 1.7;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+        width: fit-content !important;
+        max-width: 700px;
     }
     
     .tech-pill {
@@ -297,19 +298,19 @@ st.markdown("""
     }
     
     .signal-card.emergency-active {
-        border-color: #ff0844;
-        background: linear-gradient(135deg, rgba(255, 8, 68, 0.2) 0%, rgba(255, 107, 0, 0.2) 100%);
-        box-shadow: 0 0 50px rgba(255, 8, 68, 0.8);
+        border-color: #00c400;
+        background: linear-gradient(135deg, rgba(0, 196, 0, 0.2) 0%, rgba(17, 255, 17, 0.2) 100%);
+        box-shadow: 0 0 50px rgba(0, 196, 0, 0.8);
         animation: emergencySignal 0.5s ease-in-out infinite;
     }
     
     @keyframes emergencySignal {
         0%, 100% { 
-            box-shadow: 0 0 50px rgba(255, 8, 68, 0.8);
+            box-shadow: 0 0 50px rgba(0, 196, 0, 0.8);
             transform: scale(1);
         }
         50% { 
-            box-shadow: 0 0 80px rgba(255, 8, 68, 1);
+            box-shadow: 0 0 80px rgba(0, 196, 0, 1);
             transform: scale(1.02);
         }
     }
@@ -357,19 +358,19 @@ st.markdown("""
     }
     
     .light-emergency {
-        background: radial-gradient(circle, rgba(255, 8, 68, 0.7) 0%, transparent 70%);
-        border-color: #ff0844;
-        box-shadow: 0 0 60px rgba(255, 8, 68, 0.8);
+        background: radial-gradient(circle, rgba(0, 196, 0, 0.7) 0%, transparent 70%);
+        border-color: #00c400;
+        box-shadow: 0 0 60px rgba(0, 196, 0, 0.8);
         animation: emergencyGlow 0.3s ease-in-out infinite;
     }
     
     @keyframes emergencyGlow {
         0%, 100% { 
-            box-shadow: 0 0 60px rgba(255, 8, 68, 0.8);
+            box-shadow: 0 0 60px rgba(0, 196, 0, 0.8);
             transform: scale(1);
         }
         50% { 
-            box-shadow: 0 0 90px rgba(255, 8, 68, 1);
+            box-shadow: 0 0 90px rgba(0, 196, 0, 1);
             transform: scale(1.05);
         }
     }
@@ -385,9 +386,9 @@ st.markdown("""
     }
     
     .timer-container.emergency {
-        background: linear-gradient(135deg, rgba(255, 8, 68, 0.2) 0%, rgba(255, 107, 0, 0.2) 100%);
-        border: 2px solid #ff0844;
-        box-shadow: 0 0 60px rgba(255, 8, 68, 0.6);
+        background: linear-gradient(135deg, rgba(0, 196, 0, 0.2) 0%, rgba(17, 255, 17, 0.2) 100%);
+        border: 2px solid #00c400;
+        box-shadow: 0 0 60px rgba(0, 196, 0, 0.6);
         animation: emergencyPulse 1s ease-in-out infinite;
     }
     
@@ -425,13 +426,13 @@ st.markdown("""
     }
     
     .emergency-banner {
-        background: linear-gradient(135deg, rgba(255, 8, 68, 0.3) 0%, rgba(255, 107, 0, 0.2) 100%);
-        border: 3px solid #ff0844;
+        background: linear-gradient(135deg, rgba(0, 196, 0, 0.3) 0%, rgba(17, 255, 17, 0.2) 100%);
+        border: 3px solid #00c400;
         border-radius: 28px;
         padding: 3rem;
         text-align: center;
         margin: 3rem 2rem;
-        box-shadow: 0 0 60px rgba(255, 8, 68, 0.6);
+        box-shadow: 0 0 60px rgba(0, 196, 0, 0.6);
         animation: emergencyPulse 1s ease-in-out infinite;
     }
     
@@ -500,6 +501,21 @@ st.markdown("""
         text-transform: uppercase;
         letter-spacing: 1.5px;
         font-weight: 700;
+    }
+    
+    .image-highlight {
+        border: 5px solid #00c400 !important;
+        box-shadow: 0 0 40px rgba(0, 196, 0, 0.8) !important;
+        animation: imageHighlight 1s ease-in-out infinite;
+    }
+    
+    @keyframes imageHighlight {
+        0%, 100% { 
+            box-shadow: 0 0 40px rgba(0, 196, 0, 0.8);
+        }
+        50% { 
+            box-shadow: 0 0 60px rgba(0, 196, 0, 1);
+        }
     }
     
     .stButton > button {
@@ -830,7 +846,7 @@ st.markdown("""
     </h1>
     <p class="hero-subtitle">
         Revolutionizing urban mobility with cutting-edge AI. Real-time vehicle detection, 
-        adaptive signal optimization, and <strong style="color: #ff0844;">intelligent emergency vehicle prioritization</strong> powered by YOLOv8 & CNN.
+        adaptive signal optimization, and <strong style="color: #00c400;">intelligent emergency vehicle prioritization</strong> powered by YOLOv8 & CNN.
     </p>
     <div>
         <span class="tech-pill">🤖 YOLOv8 Detection</span>
@@ -1097,11 +1113,11 @@ if all(uploaded_images.values()):
                     <div style="font-size: 1.5rem; color: #fff; font-weight: 700; margin: 1rem 0;">
                         {current_direction.upper()} Direction • Confidence: {emergency_conf:.1f}%
                     </div>
-                    <div style="font-size: 1rem; color: #fbbf24; font-weight: 600; margin: 0.5rem 0;">
+                    <div style="font-size: 1rem; color: #11ff11; font-weight: 600; margin: 0.5rem 0;">
                         Detection Method: {detection_method_used}
                     </div>
-                    <div style="font-size: 1.1rem; color: #fbbf24; font-weight: 600;">
-                        ⚠️ All other directions RED • Emergency vehicle has priority clearance for {green_time} seconds
+                    <div style="font-size: 1.1rem; color: #11ff11; font-weight: 600;">
+                        ✅ {current_direction.upper()} direction GREEN • Emergency vehicle has priority clearance for {green_time} seconds
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
@@ -1124,12 +1140,12 @@ if all(uploaded_images.values()):
                         direction, "None")
 
                     if is_current and is_emergency:
-                        # Emergency vehicle active
+                        # Emergency vehicle active - SHOW GREEN
                         if st.session_state.phase == "green":
                             card_class = "signal-card emergency-active"
                             light_class = "light-emergency"
-                            status = "🚨 EMERGENCY"
-                            status_color = "#ff0844"
+                            status = "🟢 EMERGENCY GREEN"
+                            status_color = "#00c400"
                         else:
                             card_class = "signal-card yellow-active"
                             light_class = "light-yellow"
@@ -1156,7 +1172,7 @@ if all(uploaded_images.values()):
                     # Add emergency badge if detected
                     emergency_badge = ""
                     if has_emergency:
-                        emergency_badge = f'''<div style="background: #ff0844; color: white; padding: 0.375rem 0.75rem; 
+                        emergency_badge = f'''<div style="background: #00c400; color: white; padding: 0.375rem 0.75rem; 
                                             border-radius: 12px; font-size: 0.7rem; font-weight: 900; 
                                             margin-top: 0.5rem; letter-spacing: 1px;">
                                             🚨 AMBULANCE<br><span style="font-size: 0.65rem;">{method}</span>
@@ -1175,7 +1191,7 @@ if all(uploaded_images.values()):
             # Timer display
             timer_placeholder = st.empty()
 
-            # Display detected images
+            # Display detected images WITH HIGHLIGHTING
             st.markdown("""
             <div class="section-container">
                 <h2 class="section-title">🎯 Vehicle Detection Results</h2>
@@ -1191,17 +1207,25 @@ if all(uploaded_images.values()):
                         method = st.session_state.detection_method[direction]
                         caption += f"\n🚨 AMBULANCE ({st.session_state.emergency_confidence[direction]:.1f}% - {method})"
 
+                    # Apply highlighting CSS class for emergency images
+                    if direction in st.session_state.emergency_directions:
+                        st.markdown('<div class="image-highlight">',
+                                    unsafe_allow_html=True)
+
                     st.image(
                         st.session_state.annotated_images[direction],
                         caption=caption,
                         use_container_width=True
                     )
 
+                    if direction in st.session_state.emergency_directions:
+                        st.markdown('</div>', unsafe_allow_html=True)
+
             # Countdown timer
             duration = green_time if st.session_state.phase == "green" else yellow_time
             for remaining in range(duration, 0, -1):
                 if is_emergency and st.session_state.phase == "green":
-                    phase_emoji = "🚨"
+                    phase_emoji = "🟢"
                     phase_text = "EMERGENCY CLEARANCE ACTIVE"
                     timer_class = "timer-container emergency"
                     value_class = "timer-value emergency"
@@ -1264,7 +1288,7 @@ if all(uploaded_images.values()):
                 <div style="font-size: 1.3rem; color: #fff; font-weight: 700; margin-top: 1rem;">
                     Detected in: {emergency_list}
                 </div>
-                <div style="font-size: 1rem; color: #fbbf24; margin-top: 1rem; font-weight: 600;">
+                <div style="font-size: 1rem; color: #11ff11; margin-top: 1rem; font-weight: 600;">
                     ✓ Emergency vehicles were given priority clearance with extended green time (35s)
                 </div>
             </div>
@@ -1324,7 +1348,7 @@ if all(uploaded_images.values()):
         colors = []
         for d in st.session_state.counts.keys():
             if d in st.session_state.emergency_directions:
-                colors.append('#ff0844')  # Red for emergency
+                colors.append('#00c400')  # Green for emergency
             else:
                 colors.append('#667eea')  # Blue for regular
 
@@ -1434,7 +1458,7 @@ if all(uploaded_images.values()):
         pie_colors = []
         for d in st.session_state.counts.keys():
             if d in st.session_state.emergency_directions:
-                pie_colors.append('#ff0844')
+                pie_colors.append('#00c400')
             else:
                 pie_colors.append('#667eea')
 
