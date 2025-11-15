@@ -151,9 +151,9 @@ Model Summary:
 | Member                 | Role                           |
 | ---------------------- | ------------------------------ |
 | 👑 Lovnish Verma       | Lead Developer / ML Engineer   |
-| 🧠 [Add Teammate Name] | Computer Vision & CNN Training |
-| ⚡ [Add Teammate Name]  | UI/UX & Streamlit Integration  |
-| 🛰 [Add Teammate Name] | Deployment & Optimization      |
+| 🧠 Chandan  | Computer Vision & CNN Training |
+| ⚡ Prateek  | UI/UX & Streamlit Integration  |
+| 🛰 Aman | Deployment & Optimization      |
 
 > Want to join or collaborate? PRs are welcome!
 
