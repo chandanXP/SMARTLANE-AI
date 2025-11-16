@@ -151,9 +151,9 @@ Model Summary:
 | Member                 | Role                           |
 | ---------------------- | ------------------------------ |
 | 👑 Lovnish Verma       | Lead Developer / ML Engineer   |
-| 🧠 Chandan  | Computer Vision & CNN Training |
-| ⚡ Prateek  | UI/UX & Streamlit Integration  |
-| 🛰 Aman | Deployment & Optimization      |
+| 🧠 Chandan Saroj  | Computer Vision & CNN Training |
+| ⚡ Prateek Dhar Dwivedi  | UI/UX & Streamlit Integration  |
+| 🛰 Aman Choudhary | Deployment & Optimization      |
 
 > Want to join or collaborate? PRs are welcome!
 
@@ -177,9 +177,9 @@ If you find this useful, please star the repo:
 
 For research or collaboration inquiries:
 
-📧 Email: *[Add Your Contact Email]*
+📧 Email: *princelv84@gmail.com*
 🌐 GitHub: [https://github.com/lovnishverma](https://github.com/lovnishverma)
-🔗 LinkedIn: *[Insert Profile]*
+🔗 LinkedIn: *https://www.linkedin.com/in/lovnishverma/*
 
 ---
 
